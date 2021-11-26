@@ -1,12 +1,12 @@
 {
-  "name": "mylib",
+  "name": "repcount",
   "version": "0.1.0",
-  "description": "My library",
+  "description": "A utility library for counting reps from poses",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min",
     "build:commonjs": "babel src --out-dir lib",
-    "build:umd": "cross-env FILE_NAME=mylib webpack",
+    "build:umd": "cross-env FILE_NAME=repcount webpack",
     "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
     "clean": "rimraf lib dist",
     "lint": "eslint src --ext .js,.jsx",
@@ -17,19 +17,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<github-username>/mylib.git"
+    "url": "git+https://github.com/maddyonline/repcount.git"
   },
   "files": [
     "lib",
     "src",
     "dist"
   ],
-  "author": "Mostafa <tee.fouad@gmail.com>",
+  "author": "Madhav",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/<github-username>/mylib/issues"
+    "url": "https://github.com/maddyonline/repcount/issues"
   },
-  "homepage": "https://github.com/<github-username>/mylib#readme",
+  "homepage": "https://github.com/maddyonline/repcount#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",

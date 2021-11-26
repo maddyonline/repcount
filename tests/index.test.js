@@ -1,5 +1,5 @@
-import { countReps } from '../src'
-import frames from './data/frames.json'
+import { countReps } from '../src';
+import frames from './data/frames.json';
 
 describe('Test countReps', () => {
   it('should count reps correctly', () => {
